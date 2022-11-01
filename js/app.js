@@ -23,6 +23,10 @@ const h_skills = document.getElementById('h_skills');
 const h_edu = document.getElementById('h_edu');
 const h_life = document.getElementById('h_life');
 
+const about = document.getElementById('about');
+const skills = document.getElementById('skills');
+const education = document.getElementById('education');
+const life = document.getElementById('life');
 const toTop = document.getElementById('toTop');
 h_home.classList.add('focus');
 window.addEventListener("scroll",()=>{
@@ -39,11 +43,24 @@ window.addEventListener("scroll",()=>{
             headerLink[i].classList.remove('active');
         }
     }
-    if(this.scrollY > 300){
+    if(this.scrollY >= 300){
         toTop.classList.add('open');
     }else{
         toTop.classList.remove('open');
     }
+    if(this.scrollY >= 300){
+        about.classList.add('in')
+    }
+    if(this.scrollY >= 1200){
+        skills.classList.add('in')
+    }
+    if(this.scrollY >= 1800){
+        education.classList.add('in')
+    }
+    if(this.scrollY >= 2500){
+        life.classList.add('in')
+    }
+    
     if(this.scrollY >=0 && this.scrollY < 500){
         clearBorderFn();
         h_home.classList.add('focus');

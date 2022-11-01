@@ -233,6 +233,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    &.in{
+        opacity: 1;
+        transition: .3s;
+    }
     >.motto{
         color:#555;
         margin-bottom: 30px;
@@ -307,6 +312,11 @@ header{
     align-items: center;
     flex-direction: column;
     background-color: #f8f8f8;
+    opacity: 0;
+    &.in{
+        opacity: 1;
+        transition: .3s;
+    }
     >.content{
         display: grid;
         justify-content: center;
@@ -377,6 +387,11 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0;
+    &.in{
+        opacity: 1;
+        transition: .3s;
+    }
     >.eduList{
         display: grid;
         justify-content: center;
@@ -455,6 +470,11 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0;
+    &.in{
+        opacity: 1;
+        transition: .3s;
+    }
     >.photoBox{
         display: grid;
         justify-content: center;
@@ -565,6 +585,11 @@ header{
             }
         }
     }
+}
+
+section.in{
+    opacity: 1;
+    transition: .3s;
 }
 footer{
     widtH:100%;

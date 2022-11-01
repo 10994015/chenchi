@@ -365,6 +365,13 @@ header > ul > a.active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+}
+
+#about.in {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #about > .motto {
@@ -476,6 +483,13 @@ header > ul > a.active {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f8f8f8;
+  opacity: 0;
+}
+
+#skills.in {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #skills > .content {
@@ -583,6 +597,13 @@ header > ul > a.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
+}
+
+#education.in {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #education > .eduList {
@@ -691,6 +712,13 @@ header > ul > a.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
+}
+
+#life.in {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #life > .photoBox {
@@ -846,6 +874,12 @@ header > ul > a.active {
   100% {
     opacity: 1;
   }
+}
+
+section.in {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 footer {
