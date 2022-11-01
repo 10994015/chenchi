@@ -828,6 +828,7 @@ header > ul > a.active {
 
 #photoModal > .content {
   height: 80%;
+  max-width: 80%;
   width: auto;
   border: 5px #fff solid;
   border-radius: 10px;
@@ -856,6 +857,8 @@ header > ul > a.active {
   height: 100%;
   -webkit-animation: openPhoto .3s linear;
           animation: openPhoto .3s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @-webkit-keyframes openPhoto {

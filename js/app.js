@@ -30,7 +30,6 @@ const life = document.getElementById('life');
 const toTop = document.getElementById('toTop');
 h_home.classList.add('focus');
 window.addEventListener("scroll",()=>{
-    console.log(this.scrollY);
     
     if(this.scrollY > 0){
         header.classList.add('active');
