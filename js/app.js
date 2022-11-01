@@ -51,13 +51,13 @@ window.addEventListener("scroll",()=>{
     if(this.scrollY >= 300){
         about.classList.add('in')
     }
-    if(this.scrollY >= 1200){
+    if(this.scrollY >= 1300){
         skills.classList.add('in')
     }
-    if(this.scrollY >= 1800){
+    if(this.scrollY >= 1900){
         education.classList.add('in')
     }
-    if(this.scrollY >= 2500){
+    if(this.scrollY >= 2600){
         life.classList.add('in')
     }
     
@@ -89,7 +89,26 @@ function clearBorderFn(){
     h_edu.classList.remove('focus');
     h_life.classList.remove('focus');
 }
-
+h_home.addEventListener('click',()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+h_about.addEventListener('click',()=>{
+    document.body.scrollTop = 700;
+    document.documentElement.scrollTop = 700;
+})
+h_skills.addEventListener('click',()=>{
+    document.body.scrollTop = 1500;
+    document.documentElement.scrollTop = 1500;
+})
+h_edu.addEventListener('click',()=>{
+    document.body.scrollTop = 2050;
+    document.documentElement.scrollTop = 2050;
+})
+h_life.addEventListener('click',()=>{
+    document.body.scrollTop = 2900;
+    document.documentElement.scrollTop = 2900;
+})
 toTop.addEventListener('click',()=>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

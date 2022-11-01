@@ -473,7 +473,7 @@ header{
     opacity: 0;
     &.in{
         opacity: 1;
-        transition: .3s;
+        transition: .5s;
     }
     >.photoBox{
         display: grid;
