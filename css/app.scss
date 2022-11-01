@@ -344,10 +344,10 @@ header{
                 background-color: #ddd;
                 border-radius: 12px;
                 overflow: hidden;
+                display: none;
                 >div{
                     background-color: #111;
                     height: 100%;
-                    
                     animation: bar 1.5s ease-out;
                     &.html{
                         width:90%;
@@ -462,7 +462,6 @@ header{
         }
     }
 }
-
 #life{
     width:100%;
     padding: 100px 0;

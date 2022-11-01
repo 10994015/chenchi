@@ -28,6 +28,7 @@ const skills = document.getElementById('skills');
 const education = document.getElementById('education');
 const life = document.getElementById('life');
 const toTop = document.getElementById('toTop');
+const bar = document.getElementsByClassName('bar');
 h_home.classList.add('focus');
 window.addEventListener("scroll",()=>{
     
@@ -51,7 +52,10 @@ window.addEventListener("scroll",()=>{
         about.classList.add('in')
     }
     if(this.scrollY >= 1300){
-        skills.classList.add('in')
+        skills.classList.add('in');
+        for(let i=0;i<bar.length;i++){
+            bar[i].style.display = "block";
+        }
     }
     if(this.scrollY >= 1900){
         education.classList.add('in')
